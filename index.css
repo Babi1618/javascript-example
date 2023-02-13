@@ -1,7 +1,22 @@
 body {
-  background-color: #C8A2C8;
+  background-color: #c8a2c8;
 }
 
-h1{
-    text-align: center;
+h1 {
+  text-align: center;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  height: 200px;
+  width: 200px;
+  border: solid 1px pink;
+  align-items: center;
+}
+.square {
+  height: 50px;
+  width: 50px;
+  background-color: blueviolet;
 }

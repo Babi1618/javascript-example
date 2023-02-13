@@ -487,3 +487,11 @@ const find = (x, arr) => {
 
 // console.log(find(x, array));
 
+// colloquio 10 febbraio : sum - double - only even
+const sumDoubleEven = (arr) => {
+  const res = arr
+    .filter((el) => el % 2 == 0)
+    .map((el) => el * 2)
+    .reduce((acc, next) => acc + next);
+  return res;
+};

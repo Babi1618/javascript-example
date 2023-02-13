@@ -1,18 +1,12 @@
-const array = [9, 15, 18, 19, 30];
-const x = 31;
+const array = [1, 2, 3, 4, 5, 6];
 
-const find = (x, arr) => {
-  if (arr.length > 0) {
-    let middle = arr[Math.ceil(arr.length / 2) - 1];
-    console.log("array", arr, "x", x, "middle", middle);
-    if (x === middle) {
-      return true;
-    }
-    return x < middle
-      ? find(x, arr.slice(0, Math.ceil(arr.length / 2) - 1))
-      : find(x, arr.slice(Math.ceil(arr.length / 2)));
-  }
-  return false;
-};
+const find = array.find((el) => el === 9);
 
-console.log(find(x, array));
+// console.log(find);
+
+const some = array.some((el) => el === 1);
+// console.log(some);
+
+const includes = array.includes(3);
+
+console.log(includes);
